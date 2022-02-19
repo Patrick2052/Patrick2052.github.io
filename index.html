@@ -4,50 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>El intercambio</title>
     <link rel="stylesheet" href="/index.css">
     <link href="https://unpkg.com/pattern.css" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <header>Welcome</header>
-        <div id="links">
-            <a href="#instituto">instituto</a>
-            <a href="#diferencias">diferencias</a>
+    <!--NAVIGATION-->
+    <header>
+        <div class="logo">
+            <img  src="/media/spain_svg.svg"/>
+            <img  src="/media/germany.svg">
         </div>
-    </nav>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#instituto">instituto</a></li>
+                <li><a href="#diferencias">diferencias</a></li>
+                <li><a href="#">otras</a></li>
+            </ul>
+        </nav>
+        <a href="#contact"><button>contáctenos</button></a>
 
+
+    </header>
+    <!--NAVIGATION END-->
+    <!--MAIN START-->
     <main>
-        <section class="section" id="welcome">
-            <h1>Información para el intercambio</h1>
-            <img class="img-rounded" src="media/straubing.jpg" >
-        </section>
 
-        <section id="instituto">
-            <div class="section section-doubleCol">
-                <h2>El Instituto</h2>
-                <img src="media/gebäude.jpg">
+        <!--WELCOME SECTION-->
+        <section class="bg__primary">
+            <div id="welcome" class="section__content">
+                <h1>Información para el intercambio</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ab unde culpa, atque pariatur adipisci sapiente temporibus. Harum sit ea quis laborum rerum consequuntur. Provident quo nihil laudantium dignissimos sint ab. Illo quibusdam animi eius error vel sequi dicta labore minima est, amet iste placeat odio qui delectus, aperiam sunt.</p>
+                <div class="container"><img src="/media/world.svg" id="welcome-svg"></div>
+            </div>
+        </section>
+            <!--<img class="img-rounded" src="media/straubing.jpg" >-->
+        <section class="bg__secondary">
+            <div class="section__content section__columns__2">
+                <div>
+                    <h2>El Instituto</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam vitae perspiciatis debitis, maiores, suscipit itaque atque eius quaerat molestiae soluta cum sunt nesciunt nostrum velit facilis. Enim aliquam magnam, tenetur officia rerum nobis quo veniam fugiat quibusdam laboriosam quisquam explicabo aperiam architecto esse unde exercitationem, accusantium hic neque vitae labore corporis. Delectus itaque non voluptates impedit dolorem explicabo laboriosam a. Dolorem nam ab doloribus impedit id magni odio explicabo, beatae laboriosam perspiciatis, aut est quis. Illo harum quaerat voluptate nemo, blanditiis doloribus mollitia officiis excepturi sit molestias accusantium, aliquam asperiores ullam molestiae dolores perspiciatis necessitatibus, ab quam. Earum, officia iure.</p>
+                </div>
+                <!--Bildergalerie hier?-->
+                
+                
+            </div>
+            <div id="section__instituto__pictures">
+                <img class="section__instituto__img" src="/media/schule/straubing.jpg">
+                <img class="section__instituto__img" src="/media/schule/german_flag.jpg">
+                <img class="section__instituto__img" src="/media/schule/gebäude.jpg">
+                <img class="section__instituto__img" src="/media/schule/dorf.jpg">
+
             </div>
 
-            <h3>horrario</h3>
-
-            <h3>la clases</h3>
-
-            <h3>los edificios</h3>
         </section>
-        
-        <section id="diferencias">
-            <h2>Diferencias entre Alemania y españa</h2>
+                <!--<img src="media/gebäude.jpg">-->
+
+        <h3>horrario</h3>
+
+        <h3>la clases</h3>
+
+        <h3>los edificios</h3>
+    
+        <h2>Diferencias entre Alemania y españa</h2>
 
 
-            <h3>lingua</h3>
-            <h3>el tiempo</h3>
+        <h3>lingua</h3>
+        <h3>el tiempo</h3>
+<!--CONTACT FORM-->
+        <section id="contact">
+            <div class="section__content form__container">
+                <div>
+                    <img src="/media/plane.svg"/>
+                </div>
+                <form>
+                    <h2>contacto para información</h2>
+                    <div class="form__row"><input class="field" placeholder="nombre" type="text"></div>
+                    <div class="form__row"><input class="field" placeholder="correo electronico" type="email" name="correo-electronico"></div>
+                    <div class="form__row"><input class="field" placeholder="numero de telefono" type="phone" name="telefono"></div>
+                    <div class="form__row"><textarea placeholder="mensaje" name="mensaje"></textarea></div>
+                    <input type="submit">
+                </form>
+            </div>
         </section>
-
-
-
+        <!--the contact button thats only shown on small screens-->
+        <div id="contact__button__show"><a href="#contact" id="contact__button__container"><button>contáctenos</button></a></div>
     </main>
-
-
+    <!--MAIN END-->
+    <script src="/script.js"></script>
 </body>
 </html>
