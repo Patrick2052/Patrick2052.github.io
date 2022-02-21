@@ -8,6 +8,7 @@
     --secondary : #9DAAF2;
     --attention : rgb(255, 106, 61);
     --info : #F4DB7D;
+    --light-writing: white;
 /*FONTS*/
     --font-primary : 'Cabin Sketch', cursive;
     --font-secondary : 'Amatic SC', cursive;
@@ -61,8 +62,9 @@ h3 {
 
 /*------------------IMAGES---------------------*/
 img {
-    height: 100%;
+    height: auto;
     border-radius: 7px;
+    max-width: 100%;
 }
 
 #img_1 {
@@ -205,7 +207,30 @@ section {
 /*------------------WELCOME SECTION---------------------*/
 section #welcome {
     height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-writing);
+    text-align: center;
 }
+
+.background-img-one {
+    background-image: url(/media/schule/german_flag.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: cover;
+    object-fit: cover;
+    
+}
+
+.welcome-content-background {
+    background-color: hsla(0, 6%, 21%, 0.75);
+    border-radius: 7px;
+    padding: 10px;
+    
+}
+
 
 #welcome-svg {
     height: 300px;
@@ -226,7 +251,8 @@ section #welcome {
 }
 
 .section__instituto__img {
-    max-height: 100%;
+    position: cover;
+    max-width: 100%;
     height: 20em;
     width: auto;
     box-shadow:
