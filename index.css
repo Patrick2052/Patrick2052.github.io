@@ -214,7 +214,7 @@ section #welcome {
     color: var(--light-writing);
     text-align: center;
 }
-
+/**/
 .background-img-one {
     background-image: url(/media/schule/german_flag.jpg);
     background-repeat: no-repeat;
