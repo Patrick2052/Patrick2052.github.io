@@ -5,7 +5,7 @@
 :root {
 /*COLORS*/
     --primary : #1A2238;
-    --secondary : #9DAAF2;
+    --secondary : #5060bd;
     --attention : rgb(255, 106, 61);
     --info : #F4DB7D;
     --light-writing: white;
@@ -23,6 +23,10 @@
     margin: 0;
     padding: 0;
     font-family: var(--font-primary)
+}
+
+html {
+    scroll-behavior: smooth;
 }
 /*UTILITY*/
 .bg__primary {
@@ -53,6 +57,7 @@ h1 {
 
 h2 {
     font-size: 2em;
+    color: var(--info)
 }
 
 h3 {
@@ -78,7 +83,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 7.5px 10% 7.5px 10%;
+    padding: 0px 10% 0px 10%;
     background-color: var(--secondary);
 }
 
@@ -198,9 +203,8 @@ section {
 
 .section__columns__2 {
     display: grid;
-    grid-template-columns: 2fr 1fr;    
-
-
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 50px; 
 }
 
 /*------------------SECTION OVERALL END---------------------*/
@@ -219,8 +223,9 @@ section #welcome {
     background-image: url(/media/schule/german_flag.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: cover;
+    background-position: 50% 40%;
     object-fit: cover;
+
     
 }
 
@@ -253,7 +258,7 @@ section #welcome {
 .section__instituto__img {
     position: cover;
     max-width: 100%;
-    height: 20em;
+    height: auto;
     width: auto;
     box-shadow:
     11.5px 13px 6.5px rgba(0, 0, 0, 0.06),
@@ -282,9 +287,13 @@ section #welcome {
     background-color: var(--info);
 }
 
+#contact h2 {
+    color: var(--primary)
+}
+
 .form__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /*display: grid;
+    grid-template-columns: 1fr 1fr;*/
 }
 
 #contact img {
@@ -296,11 +305,31 @@ section #welcome {
     justify-content:center;
     align-items: center;
     flex-wrap: wrap;
+
+}
+
+#contact form input[type=submit] {
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    width: 50%;
+    height: 3em;
+    text-align: center;
 }
 
 .field {
     width: 100%;
     height: 30px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 7px;
+    border: none;
+    transition: 0.4s ease-in-out 0s;
+}
+
+.field:focus{
+    padding: 9px;
+    
 }
 
 form textarea {
@@ -326,5 +355,9 @@ form textarea {
     #contact__button__show {
         display: block;
     }
-
+    .section__columns__2 {
+        display: grid;
+        grid-template-columns:1fr;    
+    }
+    
 }
