@@ -277,6 +277,37 @@ section #welcome {
 .section__instituto__img:nth-child(4) {flex-shrink: 1}
 
 /*------------------SECTION INSTITUTO END---------------------*/
+/*-------------SECTION HORRARIO------------*/
+#horrario {
+    color: white;
+}
+
+.stundenplan {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.day__heading {
+    font-size: 1.5em;
+
+}
+
+.day {
+    margin: 20px;
+}
+
+.field {
+    border: 1px solid white;
+    background-color: var(--info);
+}
+
+
+
+
+
+/*------------SECTION HORRARIO END*/
 
 
 /*------------------SECTION DIFERNENCIAS---------------------*/
