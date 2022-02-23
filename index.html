@@ -10,28 +10,27 @@
 </head>
 <body>
     <!--NAVIGATION-->
-    <header>
-        <div class="logo">
+    <header id="header-wide">
+        <a id="header-logo" href="#welcome"><div class="logo">
             <img  src="/media/spain_svg.svg"/>
             <img  src="/media/germany.svg">
-        </div>
+        </div></a>
         <nav>
             <ul class="nav__links">
                 <li><a href="#instituto">instituto</a></li>
-                <li><a href="#diferencias">diferencias</a></li>
-                <li><a href="#">otras</a></li>
+                <li><a href="#horrario">horrario</a></li>
+                <li><a href="#otras">otras</a></li>
             </ul>
         </nav>
-        <a href="#contact"><button>contáctenos</button></a>
-
-
+        <a id="contact-button" href="#contact"><button>contáctenos</button></a>
     </header>
     <!--NAVIGATION END-->
     <!--MAIN START-->
     <main>
 
         <!--WELCOME SECTION-->
-        <section class=" background-img-one">
+        <div class="background-img-one">
+        <section >
                 <div id="welcome" class="section__content ">
                     <div class="welcome-content-background">
                         <h1>Información para el intercambio</h1>
@@ -40,18 +39,21 @@
                     <!--<div class="container"><img src="/media/world.svg" id="welcome-svg"></div>-->
             </div>
         </section>
+    
             <!--<img class="img-rounded" src="media/straubing.jpg" >-->
-        <section id="instituto" class="bg__secondary">
-            <div class="section__content section__columns__2">
-                <div >
+        <section id="instituto">
+            <div class="section__content section__columns__2 instituto__content">
+                <div class="full-width">
                     <h2>El Instituto</h2>
-                    <p>Esto es tus instituto la dirección es “max- mustermann straße 23”. Es cerca diez minutos a pie de estación de tren.
-                        Al instituto vosotros quedáis los alumnos de alemania. Vosotros vivés con “familias invitades” / los alumnos de la instituto.
-                    </p>
+                    <p>La dirección es <i style="color: var(--attention)">“max- mustermann straße 23”</i>. Es cerca diez minutos a pie de estación de tren.</p>
+                    <br>
+                    <p>Al instituto vosotros quedáis los alumnos de alemania. Vosotros vivés con “familias invitades” / los alumnos de la instituto.</p>
+                    <img src="media/stadtplan.PNG">
                 </div>
                 <!--Bildergalerie hier?-->
                 <div>
-                    <img class="section__instituto__img" src="/media/schule/dorf.jpg">
+                    <img class="section__instituto__img" src="/media/schule/gebäude.jpg">
+                    <img class="sectoin__instituto__img" src="/media/library.jpg">
                 </div>
                 
             </div>
@@ -61,7 +63,7 @@
                 <img class="section__instituto__img" src="/media/schule/gebäude.jpg">
 
             </div>-->
-
+            </div>
         </section>
                 <!--<img src="media/gebäude.jpg">-->
         <section id="horrario">
@@ -71,67 +73,63 @@
                 <div class="stundenplan">
                     <div class="day">
                         <div class="day__heading">Lunes</div>
-                        <div class="field">one</div>
-                        <div class="field">two</div>
-                        <div class="field">three</div>
-                        <div class="field">four</div>
-                        <div class="field">five</div>
-                        <div class="field">six</div>
+                        <div class="field"><p>8:30 - 9:20</p><p>Inglés</p></div>
+                        <div class="field"><p>9:25 - 10:15</p>Matemáticas<p></p></div>
+                        <div class="field">Recreo</div>
+                        <div class="field"><p>10:35 - 11:25</p><p>Filosofía</p></div>
+                        <div class="field"><p>11:30 - 12:20</p><p>Economia</p></div>
                     </div>
                     <div class="day">
-                        <div class="day__heading">Mártes</div>
-                        <div class="field">one</div>
-                        <div class="field">two</div>
-                        <div class="field">three</div>
-                        <div class="field">four</div>
-                        <div class="field">five</div>
-                        <div class="field">six</div>
+                        <div class="day__heading">Martes</div>
+                        <div class="field"><p>8:30 - 9:20</p><p>Historia</p></div>
+                        <div class="field"><p>9:25 - 10:15</p><p>Alemán</p></div>
+                        <div class="field">Recreo</div>
+                        <div class="field"><p>10:35 - 11:25</p><p>Alemán</p></div>
+                        <div class="field"><p>11:30 - 12:20</p><p>Educación Física</p></div>
                     </div>
                     <div class="day">
-                        <div class="day__heading">Miercoles</div>
-                        <div class="field">one</div>
-                        <div class="field">two</div>
-                        <div class="field">three</div>
-                        <div class="field">four</div>
-                        <div class="field">five</div>
-                        <div class="field">six</div>
+                        <div class="day__heading">Miércoles</div>
+                        <div class="field"><p>8:30 - 9:20</p><p>Matemáticas/p></div>
+                        <div class="field"><p>9:25 - 10:15</p>Matemáticas<p></p></div>
+                        <div class="field">Recreo</div>
+                        <div class="field"><p>10:35 - 11:25</p><p>Historia</p></div>
+                        <div class="field"><p>11:30 - 12:20</p><p>Inglés</p></div>
                     </div>
                     <div class="day">
                         <div class="day__heading">Jueves</div>
-                        <div class="field">one</div>
-                        <div class="field">two</div>
-                        <div class="field">three</div>
-                        <div class="field">four</div>
-                        <div class="field">five</div>
-                        <div class="field">six</div>
+                        <div class="field"><p>8:30 - 9:20</p><p>Economía</p></div>
+                        <div class="field"><p>9:25 - 10:15</p>Lengua y Literatura<p></p></div>
+                        <div class="field">Recreo</div>
+                        <div class="field"><p>10:35 - 11:25</p><p>Alemán</p></div>
+                        <div class="field"><p>11:30 - 12:20</p><p>Economia</p></div>
                     </div>
                     <div class="day">
                         <div class="day__heading">Viernes</div>
-                        <div class="field">one</div>
-                        <div class="field">two</div>
-                        <div class="field">three</div>
-                        <div class="field">four</div>
-                        <div class="field">five</div>
-                        <div class="field">six</div>
+                        <div class="field"><p>8:30 - 9:20</p><p>Inglés</p></div>
+                        <div class="field"><p>9:25 - 10:15</p>Matemáticas<p></p></div>
+                        <div class="field">Recreo</div>
+                        <div class="field"><p>10:35 - 11:25</p><p>Filosofía</p></div>
+                        <div class="field"><p>11:30 - 12:20</p><p>Economia</p></div>
                     </div>
                 </div>
 
 
-                <h2>la clases</h2>
+                <h2 class="color__attention">todos los dias las clases terminar a las doce y veinte</h2>
             </div>
+        </section>
+<!--SECTION OTRAS -->
 
-            
+        <section id="otras">
+            <div class="section__content">
+                <h2>Otras</h2>
 
+
+            </div>
         </section>
 
 
-        <h3>los edificios</h3>
-    
-        <h2>Diferencias entre Alemania y españa</h2>
 
 
-        <h3>lingua</h3>
-        <h3>el tiempo</h3>
 <!--CONTACT FORM-->
         <section id="contact">
             <div class="section__content form__container">
@@ -143,7 +141,7 @@
                     <div class="form__row"><input class="form__field" placeholder="nombre" type="text"></div>
                     <div class="form__row"><input class="form__field" placeholder="correo electronico" type="email" name="correo-electronico"></div>
                     <div class="form__row"><input class="form__field" placeholder="numero de telefono" type="phone" name="telefono"></div>
-                    <!--<div class="form__row"><textarea placeholder="mensaje" name="mensaje"></textarea></div>-->
+                    <div class="form__row"><textarea class="form__field" placeholder="mensaje" name="mensaje"></textarea></div>
                     <input type="submit" value="enviar">
                 </form>
             </div>

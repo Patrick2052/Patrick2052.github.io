@@ -39,6 +39,10 @@ html {
     background-color: var(--info);
 }
 
+.color__attention {
+    color: var(--attention)
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -227,13 +231,23 @@ section #welcome {
 }
 /**/
 .background-img-one {
-    background-image: url(/media/schule/german_flag.jpg);
+    background-image:linear-gradient(
+        rgba(20, 20, 20, 0.4), 
+        rgba(20, 20, 20, 0.4)
+      ), url(/media/schule/german_flag.jpg);
+    background-blend-mode: saturation;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 40%;
-    object-fit: cover;
+    background-position: bottom;
+    object-fit: cover;   
+}
 
+.background-img-one::after {
+    content: "";
     
+    filter: grayscale(100%)
+
+
 }
 
 .welcome-content-background {
@@ -251,6 +265,46 @@ section #welcome {
 /*------------------WELCOME SECTION END---------------------*/
 
 /*------------------SECTION INSTITUTO---------------------*/
+.instituto__content {
+    background-color: rgba(14, 12, 12, 0.67) !important;
+    padding: 20px;
+    color: var(--light-writing);
+    border-radius: 15px;
+}
+
+
+.instituto__content img {
+    margin: 10px;
+    max-width: 60%;
+    box-shadow:
+    11.5px 13px 6.5px rgba(0, 0, 0, 0.06),
+    20.3px 23px 15.7px rgba(0, 0, 0, 0.09),
+    27px 30.5px 29.6px rgba(0, 0, 0, 0.111),
+    33.1px 37.4px 52.7px rgba(0, 0, 0, 0.131),
+    43.2px 48.8px 98.6px rgba(0, 0, 0, 0.159),
+    69px 78px 236px rgba(0, 0, 0, 0.21)
+  ;
+
+}
+
+@media  screen and (max-width: 1000px) {
+    .instituto__content img {
+        max-width: 100%;
+    }
+
+    .section__instituto__img {
+        max-width: 100%; 
+    }
+}
+
+.instituto__content h2 {
+    font-size: 3em;
+}
+
+.instituto__content p,ul {
+    font-size: 2em;
+}
+
 
 #section__instituto__pictures {
     width: 100%;
@@ -287,32 +341,39 @@ section #welcome {
 /*-------------SECTION HORRARIO------------*/
 #horrario {
     color: var(--primary);
-    background-image: url("media/clock.jpg");
+    
     background-position: 50% 40%;
-    filter: grayscale(40%)
+    
 }
 
 #horrario h2 {
-    color: var(--primary)
+    color: var(--light-writing);
+    text-align: center;
+    background-color:rgba(14, 12, 12, 0.67);
+    border-radius: 7px;
+    font-size: 3em;
+    padding: 5px;
 }
 
 .stundenplan {
     display: flex; 
     flex-direction: row;
     flex-wrap: wrap;
-
+    justify-content: center;
 }
 
 .day__heading {
     color: var(--light-writing);
     font-size: 1.5em;
-    background-color: hsla(0, 6%, 21%, 0.75);
+    background-color: hsla(0, 6%, 21%, 0.9);
     padding: 5px;
     border-radius: 7px;
 
     -webkit-box-shadow: 17px 10px 8px 2px rgba(0,0,0,0.4); 
     box-shadow: 17px 10px 8px 2px rgba(0,0,0,0.4);
 
+
+    width: 100%;
 }
 
 .day {
@@ -320,18 +381,17 @@ section #welcome {
 }
 
 .field {
-    background-color: rgba(233, 209, 73, 0.9);
+    background-color: var(--info);
     width: 100%;
     height: 30px;
-    padding: 5px;
+    padding: 10px;
     margin: 5px;
     border-radius: 7px;
 
     -webkit-box-shadow: 17px 10px 8px 2px rgba(0,0,0,0.4); 
     box-shadow: 17px 10px 8px 2px rgba(0,0,0,0.4);
-
-
 }
+
 
 
 
@@ -345,11 +405,17 @@ section #welcome {
 
 /*------------------SECTION CONTACT--------------------------*/
 #contact {
+    
     background-color: var(--info);
+    background-image: url(/media/schule/straubing.jpg);
+    background-position: center;
 }
 
 #contact h2 {
-    color: var(--primary)
+    color: var(--primary);
+    background-color: var(--info);
+    padding: 5px;
+    border-radius: 7px;
 }
 
 .form__container {
@@ -389,7 +455,7 @@ section #welcome {
     transition: 0.4s ease-in-out 0s;
 }
 
-.field:focus{
+.form__field:focus{
     padding: 9px;
     
 }
@@ -397,7 +463,7 @@ section #welcome {
 form textarea {
     resize: none;
     width: 100%;
-    height: 60px;
+    height: 120px;
 }
 
 .form__row {
@@ -405,7 +471,18 @@ form textarea {
 }
 
 input[type="submit"]{
-    background-color: green;
+    background-color: var(--attention);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+input[type="submit"]:hover{
+    transition: 0.4s;
+    color: var(--primary);
+    background-color: rgb(146, 218, 146);
+
 }
 
 
@@ -415,9 +492,29 @@ input[type="submit"]{
 /*#####################-SMALL SCREEN SECTION MEDIA-############################*/
 
 @media screen and (max-width:700px) {
-    header {
+    #header-wide {
+        display: block;
+    }
+
+    #header-logo {
         display: none;
     }
+
+    #contact-button {
+        display: none;
+    }
+
+    header nav {
+        font-size: 0.5em;
+        top: 0;
+        position: fixed;
+        background-color: var(--secondary);
+        margin: auto;
+        padding: 5px;
+        border-radius: 5px;
+        
+    }
+
     #contact__button__show {
         display: block;
     }
