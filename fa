@@ -1,0 +1,51 @@
+[33mcommit 4dfbfb8bcd61f342507be564db4a8b06409da406[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Patrick2052 <pa.huebler@gmail.com>
+Date:   Thu Feb 24 10:42:37 2022 +0100
+
+    updated a line
+
+[1mdiff --git a/index.css b/index.css[m
+[1mindex 2d49a30..32a0159 100644[m
+[1m--- a/index.css[m
+[1m+++ b/index.css[m
+[36m@@ -429,6 +429,10 @@[m [msection #welcome {[m
+     font-size: 0.8em;[m
+ }[m
+ [m
+[32m+[m[32m#otras {[m
+[32m+[m[32m    padding-bottom: 140px;[m
+[32m+[m[32m}[m
+[32m+[m
+ [m
+ /*------------------SECTION OTRAS END---------------------*/[m
+ [m
+[1mdiff --git a/index.html b/index.html[m
+[1mindex 52ac140..962890f 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -84,10 +84,10 @@[m
+                 <div class="stundenplan">[m
+                     <div class="day">[m
+                         <div class="day__heading">Lunes</div>[m
+[31m-                        <div class="field"><p>8:30 - 9:20</p><p>Inglés</p></div>[m
+[31m-                        <div class="field"><p>9:25 - 10:15</p>Matemáticas<p></p></div>[m
+[32m+[m[32m                        <div class="field"><p>8:30 - 9:20</p><p>Alemán</p></div>[m
+[32m+[m[32m                        <div class="field"><p>9:25 - 10:15</p><p>Alemán</p></div>[m
+                         <div class="field">Recreo</div>[m
+[31m-                        <div class="field"><p>10:35 - 11:25</p><p>Filosofía</p></div>[m
+[32m+[m[32m                        <div class="field"><p>10:35 - 11:25</p><p>Matemáticas</p></div>[m
+                         <div class="field"><p>11:30 - 12:20</p><p>Economia</p></div>[m
+                     </div>[m
+                     <div class="day">[m
+[36m@@ -135,10 +135,9 @@[m
+                 <div class="section__content">[m
+                     <h2>Otras</h2>[m
+                     <ul>[m
+[31m-                        <li>descansan más temprano</li>[m
+                         <li>casi todos los días tienes tiempo libre despues la final de la clase </li>[m
+                         <li>deberías conocer el país por eso pasa mucho tiempo al aire libro</li>[m
+[31m-                        <li></li>[m
+[32m+[m[32m                        <li>El mártes nosotros visitamos el museo de Ciudad de una de la tarde a cuartro de la tarde</li>[m
+                     </ul>[m
+                     <h2>seguridad</h2>[m
+                     <ul>[m

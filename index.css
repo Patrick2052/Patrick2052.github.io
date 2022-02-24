@@ -427,10 +427,15 @@ section #welcome {
 
 #otras ul li {
     font-size: 0.8em;
+    padding: 5px;
 }
 
 #otras {
     padding-bottom: 140px;
+}
+
+#otras strong {
+    color: var(--attention)
 }
 
 
