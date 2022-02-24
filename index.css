@@ -94,6 +94,14 @@ header {
     min-width: 80%;
 }
 
+
+@media  screen and (max-height: 400px) {
+    header{
+        display: none;
+    }
+}
+
+
 nav li, a, button {
     font-family: var(--font-nav);
     font-weight: 700;
@@ -237,6 +245,7 @@ section #welcome {
     align-items: center;
     color: var(--light-writing);
     text-align: center;
+    padding-top: 70px;
 }
 
 #welcome img {
@@ -414,8 +423,14 @@ section #welcome {
 /*------------SECTION HORRARIO END*/
 
 
-/*------------------SECTION DIFERNENCIAS---------------------*/
-/*------------------SECTION DIFERNENCIAS END---------------------*/
+/*------------------SECTION OTRAS---------------------*/
+
+#otras ul li {
+    font-size: 0.8em;
+}
+
+
+/*------------------SECTION OTRAS END---------------------*/
 
 /*------------------SECTION CONTACT--------------------------*/
 #contact {
