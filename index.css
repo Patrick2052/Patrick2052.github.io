@@ -60,7 +60,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 3em;
     color: var(--info)
 }
 
@@ -125,10 +125,10 @@ nav li, a, button {
     height: 100%;
 }
 
-.logo:hover {
+/*.logo:hover {
     transition: all 0.3s ease 0s;
     background-color: hsl(14, 25%, 62%);
-}
+}*/
 
 .nav__links {
     list-style: none;
