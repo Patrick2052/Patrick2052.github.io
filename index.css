@@ -427,7 +427,7 @@ section #welcome {
 
 #otras ul li {
     font-size: 0.8em;
-    padding: 5px;
+    padding: 5px; 
 }
 
 #otras {
@@ -515,11 +515,22 @@ input[type="submit"]{
     color: white;
     font-size: 2em;
     text-align: center;
+    transition: 0.4s ease-in-out;
 }
 input[type="submit"]:hover{
-    transition: 0.4s;
     color: var(--primary);
     background-color: rgb(146, 218, 146);
+    border-radius: 15px;
+    font-size: 2.2em;
+    box-shadow:
+    11.5px 13px 6.5px rgba(0, 0, 0, 0.06),
+    20.3px 23px 15.7px rgba(0, 0, 0, 0.09),
+    27px 30.5px 29.6px rgba(0, 0, 0, 0.111),
+    33.1px 37.4px 52.7px rgba(0, 0, 0, 0.131),
+    43.2px 48.8px 98.6px rgba(0, 0, 0, 0.159),
+    69px 78px 236px rgba(0, 0, 0, 0.21)
+  ;
+
 
 }
 
